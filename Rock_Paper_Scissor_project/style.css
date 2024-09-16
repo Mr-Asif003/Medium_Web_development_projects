@@ -1,0 +1,176 @@
+*{
+ margin: 0px;
+ padding: 0px;
+}
+body{
+
+}
+#top{
+    color: aliceblue;
+    text-align: center;
+  background-color: black;
+  height: 10vh;
+}
+#top:hover{
+    color: rgb(236, 10, 153);
+    transition: 2s;
+   
+}
+.container{
+  height: 90vh;
+  width: 100vw;
+  display:grid;
+  grid-template-columns: 20vw 60vw 20vw;
+  grid-template-rows: 6vh 60vh 1.5fr;
+}
+
+.img{
+  height: 5vw;
+}
+.userTurn{
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start:3;
+  grid-row-end:4;
+  width: 100%;
+  height: 100%;
+}
+.images{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 2vw;
+  margin-left: 3vw;
+  text-align: center;
+}
+.img{
+  margin-left: 2vw;
+  
+}
+.img:hover{
+  color: brown;
+  transition: 1s;
+  height: 6vw;
+}
+.imgPara:hover{
+  height: auto;
+  width: auto;
+  color:rgb(255, 0, 166)
+}
+.display{
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  grid-column-start:2 ;
+  grid-column-end:3;
+  grid-row-start:2;
+  grid-row-end:3;
+  border-radius: 1em;
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+  grid-template-rows: 0.5fr 1fr 0.5fr;
+  color: aliceblue;
+
+}
+.user{
+  font-size:3vw;
+  font-weight: 900;
+position: relative;
+ grid-column-start:1 ;
+ grid-column-end:2 ;
+ grid-row-start: 1;
+ grid-row-end: 2;
+text-align: center;
+margin-top: 10%;
+}
+.com{
+  position: relative;
+  font-size:3vw;
+  font-weight: 900;
+position: relative;
+   grid-column-start:2 ;
+   grid-column-end:3 ;
+   grid-row-start: 1;
+   grid-row-end: 2;
+  text-align: center;
+  margin-top: 10%;
+  }
+  .timer{
+    text-align: center;
+    grid-column-start:2 ;
+    grid-column-end:3 ;
+    grid-row-start:3;
+    grid-row-end: 4;
+    font-weight: 900;
+  }
+  .score{
+    text-align: center;
+    grid-column-start:1;
+    grid-column-end:2 ;
+    grid-row-start:3;
+    grid-row-end: 4;
+    font-weight: 900;
+  }
+  .ucom{
+    text-align:left;
+  }
+  .userChoose{
+    text-align: center;
+  }
+.start{
+  height:9vw;
+}
+.hider,.hidep,.hides{
+display:none ;
+}
+.hidest{
+  display: none;
+}
+.comChoose{
+  text-align: center;
+
+}
+.hidestc{
+  display: none;
+}
+.hiderc,.hidepc,.hidesc{
+  display:none ;
+  }
+  .crock{
+    border-radius:1rem;
+  }
+  #top{
+
+  transition-delay: 2s;
+  }
+
+  p {
+    animation-duration: 2s;
+    animation-name: slidein;
+    animation-timing-function:ease-in-out;
+  }
+  
+  @keyframes slidein {
+    from {
+      translate: 150vw 0;
+      scale: 200% 1;
+    }
+  
+    to {
+      translate: 0 0;
+      scale: 100% 1;
+    }
+  }
+  .c{
+    animation-duration:1s;
+    animation-name:opacity;
+    animation-iteration-count:2;
+  }
+  @keyframes  opacity {
+    from{
+      opacity: 100%;
+    }
+    to{
+      opacity:0%
+    }
+  }
