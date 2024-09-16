@@ -1,0 +1,223 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+*:disabled {
+    background-color: dimgrey;
+    color: linen;
+    opacity: 1;
+  }
+  button:active{box-shadow:
+  inset -2px -2px 3px rgba(255, 255, 255, 0.6),
+  inset 2px 2px 3px rgba(0, 0, 0, 0.6);}
+body{
+    color: antiquewhite;
+    background-color: #191616;
+}
+header{
+    height: 10vh;
+    background-color:#110c0f;
+text-align:center;
+color: rgb(241, 233, 233);
+
+}
+footer{
+    height:auto;
+    background-color: #0f8fb3;
+}
+.mainContainer{
+    height: 80vh;
+    width: 100vw;
+}
+.container{
+    display: grid;
+    grid-template-columns: 20vw 10vw 60vw 5vw;
+    grid-template-rows:10vh 18vh 50vh 2vh;
+}
+.newGame{
+    grid-column-start:1;
+    grid-column-end:2;
+    grid-row-start:1;
+    grid-row-end:2;
+   background-color: #998e94;
+   text-align: center;
+}
+.newGame .newGamebtn{
+    background-color: #e2d3d3;
+    color:#50a000;
+    font-weight: 800;
+    margin-bottom: 4px;
+    height: 4vh;
+  margin-top: 5px;
+    border-radius: 5px;
+    padding-left: .5vw;
+    padding-right:0.5vw;
+   height: 5vh;
+
+}
+.gameTop{
+    grid-column-start:2;
+    grid-column-end:6;
+    grid-row-start:1;
+    grid-row-end:2;
+    text-align: center;
+    background-color:#3e383b;
+}
+.playerName{
+    background-color: #595454;
+    grid-column-start:1;
+    grid-column-end:2;
+    grid-row-start:2;
+    grid-row-end:3;
+    text-align: center;
+    padding: 5px;
+}
+.playerName p{
+    margin-top: 2px;
+}
+
+.inputName{
+    margin-top: 5px;
+    width:18vw;
+}
+.game{
+    position:relative;
+    width: 100%;
+    height:auto;
+    background-color: #151313;
+    margin: 20px 20px 20px 20px;
+    grid-column-start:3;
+    grid-column-end:4;
+    grid-row-start:2;
+    grid-row-end:4;
+     display:grid;
+     grid-template-columns:8vw 43.2vw 8vw;
+     grid-template-rows:7vh 48vh 10vh;
+     background-image: url("backGround.jpg");
+     background-size: cover;
+}
+.boxes{
+    position:static;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    display:flex;
+    flex-direction: column;
+    flex-wrap:wrap;
+}
+.box{
+    color: #b00505;
+    font-size:large;
+    font-weight: 900;
+    height:13vw;
+    max-height:15vh;
+    width: 13vw;
+    text-align: center;
+    background-color: #f6f1f2;
+    margin-top:3px;
+  border-radius:1em;
+  border: 2px solid;
+  box-shadow: 5px 5px 5px rgba(170, 93, 6, 0.586);
+  padding:1px;
+
+}
+
+
+ #reset{
+    background-color: #e2d3d3;
+    color:#b00505;
+    font-weight: 800;
+    margin-bottom: 4px;
+    margin-top: 4px;
+    height: 4vh;
+    width: 15vw;
+    border-radius: 5px;
+
+}
+.reset{
+    text-align: center;
+    grid-row-start: 3;
+    grid-column-start: 2;
+}
+.turn{
+    grid-column-start:1;
+    grid-column-end:2;
+    grid-row-start:3;
+    grid-row-end:4;
+    background-color:black;
+}
+.displayName{
+    height: 4vh;
+    width: 18vw;
+    margin:3px;
+    
+}
+.turn{
+    text-align: center;
+}
+.displayTurn{
+    height: 4vh;
+    width: 18vw;
+    margin:3px;
+}
+.displayWinner{
+    height: 3vh;
+    width: 18vw;
+    margin:3px;
+}
+.turn h3{
+    margin-top: 15px;
+
+}
+.lost{
+    color:red;
+}
+.displayResult{
+    height:8vh;
+    min-width:15vw ;
+}
+.hidew,.hidel,.hide{
+    display: none;
+}
+.resulti{
+    color:#50a000;
+    font-weight: 800;
+}
+.minfont{
+    font-size:large;
+}
+@media(max-width:580px){
+    .minfont{
+        font-size:2vh;
+    }
+    .newGamebtn{
+        font-size: 1.5vh;
+    }
+    button{
+        font-size:1.5vh ;
+        }
+}
+@media(max-width:650px){
+    .boxes{
+        height: 10%;
+        display:flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+
+    }
+    .box{
+        height: 14vw;
+        width: 14vw;
+        
+    }
+  .game{
+  object-fit: cover;
+  height: auto;
+  width:100%;
+  }
+}
+.biodata{
+    display:flex;
+    justify-content:space-around;
+}
